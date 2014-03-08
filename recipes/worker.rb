@@ -22,7 +22,7 @@ deploy_base = "/srv/mq-worker-gittypo3org"
 package "ruby"
 package "bundler"
 
-deploy_revision "mq-worker" do
+deploy_revision "mq-worker-gittypo3org" do
   deploy_to      deploy_base
   repository     "https://github.com/TYPO3-infrastructure/mq-worker-gittypo3org"
   migrate        false
@@ -55,7 +55,7 @@ end
 
 include_recipe "runit"
 
-runit_service "mq-worker-reviewtypo3org" do
+runit_service "mq-worker-gittypo3org" do
   default_logger true
   owner          "git"
   group          "git"
