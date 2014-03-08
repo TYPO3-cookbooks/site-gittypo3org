@@ -43,6 +43,11 @@ deploy_revision "mq-worker-gittypo3org" do
                 })
     end
 
+    directory "#{deploy_base}/shared/log" do
+      owner "git"
+      group "git"
+    end
+    
     execute "bundle install --path=vendor/bundle --without development test" do
       cwd release_path
       user           "git"
@@ -56,7 +61,6 @@ end
 include_recipe "runit"
 
 runit_service "mq-worker-gittypo3org" do
-  default_logger true
   owner          "git"
   group          "git"
 end
