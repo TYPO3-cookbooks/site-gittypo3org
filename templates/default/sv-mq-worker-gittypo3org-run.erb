@@ -1,3 +1,4 @@
 #!/bin/bash
 
-bundle exec /srv/mq-worker-gittypo3org/current/bin/worker
+cd "<%= @options[:deploy_base] %>/current/"
+bundle exec bin/worker

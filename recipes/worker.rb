@@ -89,4 +89,7 @@ include_recipe "runit"
 runit_service "mq-worker-gittypo3org" do
   owner          "git"
   group          "git"
+  options ({
+    :deploy_base => deploy_base}.merge(params)
+  )
 end
