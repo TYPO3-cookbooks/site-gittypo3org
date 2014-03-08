@@ -1,4 +1,6 @@
 #!/bin/bash
-
+exec 2>&1
+echo 'mq-worker-gittypo3org starting.'
 cd "<%= @options[:deploy_base] %>/current/"
-bundle exec bin/worker
+exec chpst -ugit:git \
+    bundle exec bin/worker
