@@ -27,6 +27,7 @@ directory "#{deploy_base}/shared/config" do
   owner "git"
   group "git"
   action :create
+  recursive true
 end
 
 # handle amqp password
