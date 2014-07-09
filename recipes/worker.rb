@@ -23,11 +23,15 @@ package "ruby"
 package "bundler"
 
 # create shared config directory
-directory "#{deploy_base}/shared/config" do
-  owner "git"
-  group "git"
-  action :create
-  recursive true
+[
+  deploy_base,
+  "#{deploy_base}/shared",
+  "#{deploy_base}/shared/config",
+].each do |dir|
+  directory dir do
+    owner "git"
+    group "git"
+  end
 end
 
 # handle amqp password
