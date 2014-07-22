@@ -3,7 +3,7 @@
 
 
 include_recipe "t3-chef-vault"
-include_recipe "gitweb"
+include_recipe "t3-gitweb"
 include_recipe "git-daemon"
 
 include_recipe "site-gittypo3org::worker"

@@ -7,7 +7,7 @@ version          "0.1.6"
 
 depends "ssl_certificates"
 depends "t3-chef-vault"
-depends "gitweb"
+depends "t3-gitweb"
 depends "git-daemon"
 depends "apt"
 depends "runit"
