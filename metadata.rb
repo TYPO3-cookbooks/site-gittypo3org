@@ -5,6 +5,7 @@ license          "Apache 2.0"
 description      "Installs/configures git.typo3.org"
 version          "0.1.8"
 
+depends "zabbix-custom-checks", "= 1.2.0"
 depends "ssl_certificates", "= 1.1.3"
 depends "t3-chef-vault", "= 1.0.1"
 depends "t3-gitweb", "= 0.1.7"
