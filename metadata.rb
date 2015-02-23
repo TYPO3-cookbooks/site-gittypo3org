@@ -3,7 +3,7 @@ maintainer       "Steffen Gebert / TYPO3 Association"
 maintainer_email "steffen.gebert@typo3.org"
 license          "Apache 2.0"
 description      "Installs/configures git.typo3.org"
-version          "0.1.9"
+version          "0.1.12"
 
 depends "zabbix-custom-checks", "= 0.2.0"
 depends "ssl_certificates", "= 1.1.3"
