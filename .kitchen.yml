@@ -20,7 +20,8 @@ suites:
       dev_mode: true
       site-gittypo3org:
         amqp:
-          server: mq.typo3.vagrant
+          server:
+          # server: mq.typo3.vagrant
           user: gittypo3org
       gitweb:
         ssl_certificate: "wildcard.vagrant"

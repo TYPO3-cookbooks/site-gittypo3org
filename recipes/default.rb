@@ -7,6 +7,6 @@ include_recipe "t3-chef-vault"
 include_recipe "t3-gitweb"
 include_recipe "git-daemon"
 
-include_recipe "site-gittypo3org::worker"
+include_recipe "site-gittypo3org::worker" if node['site-gittypo3org']['amqp']['server']
 
 include_recipe "zabbix-custom-checks::git"
