@@ -9,4 +9,4 @@ include_recipe "git-daemon"
 
 include_recipe "site-gittypo3org::worker" if node['site-gittypo3org']['amqp']['server']
 
-include_recipe "zabbix-custom-checks::git"
+include_recipe "zabbix-custom-checks::git" if node['t3-base']['flags']['production']
