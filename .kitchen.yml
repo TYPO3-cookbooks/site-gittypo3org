@@ -24,14 +24,14 @@ suites:
           server:
       gitweb:
         ssl_certificate: "wildcard.vagrant"
-  - name: mqworker
-    run_list:
-      - recipe[site-gittypo3org::default]
-    attributes:
-      site-gittypo3org:
-        amqp:
-          server: mq.typo3.vagrant
-          user: gittypo3org
-      gitweb:
-        ssl_certificate: "wildcard.vagrant"
+#  - name: mqworker
+#    run_list:
+#      - recipe[site-gittypo3org::default]
+#    attributes:
+#      site-gittypo3org:
+#        amqp:
+#          server: mq.typo3.vagrant
+#          user: gittypo3org
+#      gitweb:
+#        ssl_certificate: "wildcard.vagrant"
 
