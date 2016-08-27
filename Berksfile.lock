@@ -96,7 +96,7 @@ GRAPH
   screen (0.7.0)
   seven_zip (2.0.2)
     windows (>= 1.2.2)
-  site-gittypo3org (0.1.18)
+  site-gittypo3org (0.1.19)
     git-daemon (~> 1.2.0)
     runit (= 1.7.6)
     ssl_certificates (~> 1.1.3)
