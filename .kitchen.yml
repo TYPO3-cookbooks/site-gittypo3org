@@ -10,18 +10,27 @@ platforms:
 - name: debian-7.8
   run_list:
   - recipe[apt::default]
+- name: debian-8.5
+  run_list:
+  - recipe[apt::default]
 
 suites:
   - name: default
     run_list:
       - recipe[site-gittypo3org::default]
     attributes:
-      # this makes chef-vault use plaintext data bags
-      dev_mode: true
       site-gittypo3org:
         amqp:
           server:
-          # server: mq.typo3.vagrant
+      gitweb:
+        ssl_certificate: "wildcard.vagrant"
+  - name: mqworker
+    run_list:
+      - recipe[site-gittypo3org::default]
+    attributes:
+      site-gittypo3org:
+        amqp:
+          server: mq.typo3.vagrant
           user: gittypo3org
       gitweb:
         ssl_certificate: "wildcard.vagrant"

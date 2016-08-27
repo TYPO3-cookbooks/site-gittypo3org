@@ -13,5 +13,5 @@ depends "t3-chef-vault", "~> 1.0.1"
 depends "t3-gitweb", "~> 0.1.8"
 depends "git-daemon", "~> 1.2.0"
 
-depends "runit", "= 1.7.2"
+depends "runit", "= 1.7.6"
 
