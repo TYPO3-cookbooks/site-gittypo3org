@@ -19,8 +19,7 @@
 
 deploy_base = "/srv/mq-worker-gittypo3org"
 
-package "ruby"
-package "bundler"
+package ["ruby", "bundler", "ruby-dev", "build-essential"]
 
 # create shared config directory
 [
