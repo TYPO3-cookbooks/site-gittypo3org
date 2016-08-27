@@ -10,6 +10,9 @@ platforms:
 - name: debian-7.8
   run_list:
   - recipe[apt::default]
+- name: debian-8.5
+  run_list:
+  - recipe[apt::default]
 
 suites:
   - name: default
