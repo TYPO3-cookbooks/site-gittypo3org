@@ -4,5 +4,3 @@ default['git-daemon']['max_connections'] = "60"
 default['git-daemon']['timeout'] = "7200"
 
 default['gitweb']['path'] = "/var/git/repositories"
-default['gitweb']['ssl'] = true
-default['gitweb']['ssl_certificate'] = "wildcard.typo3.org"
